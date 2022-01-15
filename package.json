@@ -1,0 +1,14 @@
+{
+  "name": "primer-prueba-npm",
+  "version": "1.0.0",
+  "description": "primer prueba de npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.47.0"
+  }
+}

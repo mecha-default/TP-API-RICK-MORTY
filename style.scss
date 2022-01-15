@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+$tipografia-principal:'Creepster', cursive; 
+$tipografia-secundaria:'Neucha', cursive;
+$color-principal:rgb(36, 197, 36);
+$color-secundario: rgb(198, 214, 241);
+
+
+@mixin contenidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+}
+@mixin botones_nav{
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: $tipografia-principal;
+    font-weight: 300;
+    font-size: 25px;
+    color: #006505;
+    background-color: $color-secundario;
+    border-radius: 15px;
+    border: 3px double #006505;  
+    margin: 70px;
+    height: 50px;
+    width: 150px;
+
+  
+  }
+
+@mixin ul{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:$color-secundario;
+  
+    }
+
+nav{
+   width: 100%;
+   height: 10%;
+   background-color: black;
+   box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+   display: flex;
+   justify-content: center;
+
+
+  
+}
+img{
+width: 450px;
+height: 300px;
+
+}
+.section-busqueda{
+    font-family: $tipografia-principal;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#boton-busqueda{
+    border-radius: 25px;
+    border: 2px solid rgb(4, 73, 13);
+    padding: 20px; 
+    width: 200px;
+    height: 15px;
+    margin-top: 100px;
+       
+}
+
+#personajes, #episodios, #ubicaciones{
+@include botones_nav();
+
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
