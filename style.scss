@@ -1,10 +1,8 @@
+
+@import "variables";
+
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-
-$tipografia-principal:'Creepster', cursive; 
-$tipografia-secundaria:'Neucha', cursive;
-$color-principal:rgb(36, 197, 36);
-$color-secundario: rgb(198, 214, 241);
 
 
 @mixin contenidos {
@@ -51,8 +49,6 @@ nav{
    box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
    display: flex;
    justify-content: center;
-
-
   
 }
 img{
