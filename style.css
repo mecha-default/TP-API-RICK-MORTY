@@ -3,38 +3,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #c6d6f1;
+  background-color: rgba(156, 154, 152, 0.692);
 }
 
 nav {
   width: 100%;
   height: 10%;
-  background-color: black;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-img {
-  width: 450px;
-  height: 300px;
-}
-
-.section-busqueda {
-  font-family: "Creepster", cursive;
-  font-size: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#boton-busqueda {
-  border-radius: 25px;
-  border: 2px solid #04490d;
-  padding: 20px;
-  width: 200px;
-  height: 15px;
-  margin-top: 100px;
+.imgnav {
+  border-radius: 30px;
 }
 
 #personajes, #episodios, #ubicaciones {
@@ -46,22 +28,124 @@ img {
   font-family: "Creepster", cursive;
   font-weight: 300;
   font-size: 25px;
-  color: #006505;
-  background-color: #c6d6f1;
-  border-radius: 15px;
-  border: 3px double #006505;
-  margin: 70px;
-  height: 50px;
-  width: 150px;
+  background-color: rgba(156, 154, 152, 0.692);
+  border-radius: 68px;
+  border: 3px double #04490d;
+  margin: 50px;
+  margin-top: 150px;
+  height: 90px;
+  width: 120px;
 }
 
 ul, a {
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: #3a809c;
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 20px;
+}
+
+.section-busqueda {
+  font-family: "Creepster", cursive;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #3a809c;
+}
+
+.buscador {
+  width: 1000px;
+  height: 200px;
+  background-color: #92ad8f;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  border-radius: 30px;
+  border: 3px double #04490d;
+}
+
+#boton-busqueda {
+  border-radius: 15px;
+  border: 2px solid #04490d;
+  padding: 20px;
+  width: 250px;
+  margin-top: 65px;
+  margin-right: 15px;
+}
+
+.contenedor-resultados {
+  display: flex;
+  margin-top: 100px;
+}
+
+.seccion-personaje {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Neucha", cursive;
+  background-color: #9dc4d3;
+}
+
+.card {
+  margin: 20px;
+  border: 3px double #04490d;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(156, 154, 152, 0.692);
+}
+
+.card img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.paginado {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#prev, #next {
+  text-decoration: none;
+  padding: 20px;
+  font-family: "Neucha", cursive;
+  font-size: 15px;
+  background-color: #92ad8f;
+  border-radius: 5px;
+  border: 3px double #04490d;
+  margin: 40px;
+  height: 10px;
+  width: 150px;
+  font-size: 20px;
+}
+
+footer {
+  height: 10%;
+  background-color: white;
+  font-family: "Creepster", cursive;
+  color: #3a809c;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pie-de-pagina {
+  font-family: "Neucha", cursive;
+  color: rgba(156, 154, 152, 0.692);
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
