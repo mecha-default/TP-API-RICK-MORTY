@@ -19,7 +19,9 @@ nav {
   border-radius: 30px;
 }
 
-#personajes, #episodios, #ubicaciones {
+#personajes,
+#episodios,
+#ubicaciones {
   text-decoration: none;
   padding: 20px;
   padding-top: 5%;
@@ -37,7 +39,8 @@ nav {
   width: 120px;
 }
 
-ul, a {
+ul,
+a {
   list-style: none;
   text-decoration: none;
   color: #3a809c;
@@ -69,7 +72,7 @@ ul, a {
 
 #boton-busqueda {
   border-radius: 15px;
-  border: 2px solid #04490d;
+  border: 3px double #04490d;
   padding: 20px;
   width: 250px;
   margin-top: 65px;
@@ -110,7 +113,8 @@ ul, a {
   justify-content: center;
 }
 
-#prev, #next {
+#prev,
+#next {
   text-decoration: none;
   padding: 20px;
   font-family: "Neucha", cursive;

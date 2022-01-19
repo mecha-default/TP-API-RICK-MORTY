@@ -1,177 +1,74 @@
-
 @import "variables";
+@import "mixins";
 
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 
-
-@mixin contenidos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;  
-}
-@mixin botones_nav{
-    text-decoration: none;
-    padding: 20px;
-    padding-top: 5%;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: $tipografia-principal;
-    font-weight: 300;
-    font-size: 25px;
-    background-color: $color-secundario;
-    border-radius: 68px;
-    border: 3px double rgb(4, 73, 13);  
-    margin: 50px;
-    margin-top: 150px;
-    height: 90px;
-    width: 120px;
-   
-  }
-
-@mixin ul{
-    list-style: none;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-secundario;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color:$color-secundario;
-  
-    }
-
-nav{
-   width: 100%;
-   height: 10%;
-   background-color: white;
-   box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
-   display: flex;
-   justify-content:space-around;
-  
+nav {
+  @include estilosnav;
 }
-.imgnav{
-    border-radius: 30px;
-
+.imgnav {
+  border-radius: 30px;
 }
 
-#personajes, #episodios, #ubicaciones{
-    @include botones_nav();
-    
-    }
-    
-    ul, a {
-        list-style: none;
-        text-decoration: none;
-        color:$color-alternativo;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-.section-busqueda{
-    font-family: $tipografia-principal;
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: $color-alternativo;
-     
-   
-}
-.buscador{
-    width: 1000px;
-    height: 200px;
-    background-color: rgb(146, 173, 143);
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    border-radius: 30px;
-    border: 3px double rgb(4, 73, 13);
-    
-}
-#boton-busqueda{
-    border-radius: 15px;
-    border: 2px solid rgb(4, 73, 13);
-    padding: 20px; 
-    width: 250px;
-    margin-top: 65px;
-    margin-right: 15px;   
+#personajes,
+#episodios,
+#ubicaciones {
+  @include botones_nav();
 }
 
-.contenedor-resultados{
-    display: flex;
-    margin-top: 100px;   
-    
+ul,
+a {
+  @include links;
 }
 
-.seccion-personaje{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: $tipografia-secundaria;
-    background-color:$color-alternativo-claro;
-    
-   
+.section-busqueda {
+  @include seccion-busqueda;
 }
-.card{
-    margin: 20px;
-    border: 3px double rgb(4, 73, 13);
-    border-radius: 5px;
-    padding: 20px;
-    background-color:rgba(156, 154, 152, 0.692);
-   
+.buscador {
+  @include estilos-buscador;
+}
+#boton-busqueda {
+  @include boton-busqueda;
 }
 
-.card img{
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-}
-.paginado{
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;   
-
-}
-#prev, #next{
-        text-decoration: none;
-        padding: 20px;
-        font-family: $tipografia-secundaria;
-        font-size: 15px;
-        background-color:rgb(146, 173, 143);
-        border-radius: 5px;
-        border: 3px double rgb(4, 73, 13);  
-        margin: 40px;
-        height: 10px;
-        width: 150px;
-        font-size: 20px;      
-            
-}
-footer{
-   
-height: 10%;   
-background-color: white;
-font-family: $tipografia-principal;
-color: $color-alternativo;
-margin:0;
-padding: 20px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-        
-}
-.pie-de-pagina{
-    font-family: $tipografia-secundaria;
-    color: $color-secundario;
-    display: flex;
-    justify-content: center;
+.contenedor-resultados {
+  display: flex;
+  margin-top: 100px;
 }
 
-h2{
-    display: flex;
-    justify-content: center;
+.seccion-personaje {
+  @include estilos-seccion-resultados;
+}
+.card {
+  @include estilos-tarjetas;
+}
+
+.card img {
+  @include imagen-tarjeta;
+}
+.paginado {
+  @include div-paginado;
+}
+#prev,
+#next {
+  @include botonpagina;
+}
+footer {
+  @include estilos-footer;
+}
+.pie-de-pagina {
+  font-family: $tipografia-secundaria;
+  color: $color-secundario;
+  @include display;
+}
+
+h2 {
+  @include display;
 }

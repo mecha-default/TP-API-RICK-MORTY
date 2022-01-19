@@ -1,0 +1,131 @@
+@mixin contenidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin display{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin estilosnav{
+    width: 100%;
+    height: 10%;
+    background-color: $color-principal;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+    display: flex;
+    justify-content:space-around;
+}
+@mixin botones_nav{
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: $tipografia-principal;
+    font-weight: 300;
+    font-size: 25px;
+    background-color: $color-secundario;
+    border-radius: 68px;
+    border: $borde-predeterminado;  
+    margin: 50px;
+    margin-top: 150px;
+    height: 90px;
+    width: 120px;   
+  }
+
+@mixin ul{
+    list-style: none;
+}
+
+@mixin links {
+    list-style: none;
+    text-decoration: none;
+    color:$color-alternativo;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+@mixin seccion-busqueda{
+    font-family: $tipografia-principal;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: $color-alternativo; 
+}
+@mixin estilos-buscador{
+    width: 1000px;
+    height: 200px;
+    background-color: $color-buscador;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    border-radius: 30px;
+    border: $borde-predeterminado;
+}
+
+@mixin boton-busqueda {
+    border-radius: 15px;
+    border: $borde-predeterminado;
+    padding: 20px; 
+    width: 250px;
+    margin-top: 65px;
+    margin-right: 15px;  
+    
+}
+
+@mixin estilos-seccion-resultados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $tipografia-secundaria;
+    background-color:$color-alternativo-claro;
+}
+
+@mixin estilos-tarjetas{
+    margin: 20px;
+    border: $borde-predeterminado;
+    border-radius: 5px;
+    padding: 20px;
+    background-color:$color-secundario
+}
+@mixin imagen-tarjeta{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+@mixin div-paginado {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    
+}
+
+@mixin botonpagina{
+    text-decoration: none;
+    padding: 20px;
+    font-family: $tipografia-secundaria;
+    font-size: 15px;
+    background-color:$color-buscador;
+    border-radius: 5px;
+    border: $borde-predeterminado;  
+    margin: 40px;
+    height: 10px;
+    width: 150px;
+    font-size: 20px;  
+}
+@mixin estilos-footer{
+    height: 10%;   
+    background-color: $color-principal;
+    font-family: $tipografia-principal;
+    color: $color-alternativo;
+    margin:0;
+    padding: 20px;
+    @include contenidos();
+
+  }
