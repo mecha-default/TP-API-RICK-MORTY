@@ -68,6 +68,7 @@ a {
   margin-top: 80px;
   border-radius: 30px;
   border: 3px double #04490d;
+  margin-bottom: 70px;
 }
 
 #boton-busqueda {
@@ -84,7 +85,7 @@ a {
   margin-top: 100px;
 }
 
-.seccion-personaje {
+.section-resultados-personajes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -106,7 +107,7 @@ a {
   height: 200px;
 }
 
-.paginado {
+.paginado-personajes {
   margin: 50px;
   display: flex;
   flex-direction: row;
