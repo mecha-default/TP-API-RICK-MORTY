@@ -9,6 +9,11 @@ const sectionResultadosEpisodios= document.querySelector (".section-resultados-e
 const sectionResultadosUbicaciones= document.querySelector (".section-resultados-ubicaciones")
 const sectionDetallePersonaje= document.querySelector(".section-detalle-personaje")
 
+//MENU MOBILE 
+const linksNav= document.querySelector(".links-nav")
+const menuMobile= document.querySelector(".menu-mobile")
+const fasfa= document.querySelector(".fasfa")
+
 //PAGINADO
 let paginaActual = 1
 let ultimaPagina = 0
@@ -72,21 +77,11 @@ botonNextPersonajes.onclick = () => {
 
 }
 
-/*
-fetch ("")
-.then (res=>res.json()))
-.then ((data)=>{
-console.log(data)
-})
+//MENU MOBILE
+
+/*fasfa.onclick = () => {
+    linksNav.style.display = "flex";
+    menuMobile.style.display = "none"
+}
 */
 
-//https://rickandmortyapi.com/api/character
-//https://rickandmortyapi.com/api/location
-//https://rickandmortyapi.com/api/episode
-
-/*
-sectionResultadosPersonajes.style.display= none
-sectionResultadosEpisodios.style.display= none
-sectionResultadosUbicaciones.style.display= none
-sectionDetallePersonaje.style.display= none
-*/

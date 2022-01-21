@@ -80,12 +80,10 @@ h2 {
 .menu-mobile {
   display: none;
 }
+
 //RESPONSIVE
-@media screen and (max-width: 1149px) and (min-width: 320px) {
-  .imgnav {
-    width: 500px;
-    height: 450px;
-  }
+@media screen and (max-width: 1149px) {
+ 
   #personajes,
   #episodios,
   #ubicaciones {
@@ -94,7 +92,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) {
   label {
     font-size: 30px;
   }
@@ -147,17 +145,10 @@ h2 {
     flex-direction: row;
     justify-content: center;
   }
-  .imgnav {
-    display: flex;
-    justify-content: center;
-  }
+  
 }
 
-@media screen and (max-width: 875px) and (min-width: 320px) {
-  .imgnav {
-    width: 500px;
-    height: 450px;
-  }
+@media screen and (max-width: 875px) {
 
   label {
     font-size: 30px;
@@ -214,26 +205,24 @@ h2 {
     flex-direction: row;
     justify-content: center;
   }
-  .imgnav {
-    display: flex;
-    justify-content: center;
-  }
-}
+ 
+ }
 
-@media screen and (max-width: 616px) and (min-width: 320px) {
+@media screen and (max-width: 616px) {
   .imgnav {
     width: 350px;
     height: 280px;
   }
 }
 
-@media screen and (max-width: 425px) and (min-width: 320px) {
+@media screen and (max-width: 425px) {
   .imgnav {
-    width: 320px;
-    height: 260px;
+    width: 300px;
+    height: 240px;
+  
   }
   .buscador {
-    width: 300px;
+    width: 280px;
     height: 90px;
     display: flex;
     justify-content: center;
