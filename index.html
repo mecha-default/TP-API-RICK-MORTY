@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buscador de Comics</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="icon" href="icons8-rick-sanchez-50.ico" />
-    <script src="https://kit.fontawesome.com/5f7fafbd10.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="Navegador">
-      <img
-        class="imgnav"
-        src="img/rick-morty-birthday-party-theme-pickle-design-template-0dd8541083b7f2414728328178d1ccc9_screen.jpeg"
-        alt="img"/>
-        <div class="links-nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Comics</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="icon" href="icons8-rick-sanchez-50.ico" />
+  <script src="https://kit.fontawesome.com/5f7fafbd10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="Navegador">
+    <img class="imgnav"
+      src="img/rick-morty-birthday-party-theme-pickle-design-template-0dd8541083b7f2414728328178d1ccc9_screen.jpeg"
+      alt="img" />
+    <div class="links-nav">
       <ul class="botones-nav">
         <div class="link" id="personajes">
           <li><a href="#characters">Characters</a></li>
@@ -29,58 +30,42 @@
         </div>
       </ul>
     </div>
-    </nav>
-    <!-- SECCION BUSQUEDA -->
-
-    <!-- MENU MOBILE  -->
-    <section class="section-busqueda">
-      <form>
-        <div class="buscador">
-          <div class="menu-mobile">
-            <button class="fasfa">
-              <i id="bars" class="fas fa-bars"></i>
-            </button>
-          </div>
-          <label for="input-busqueda">
-            <input
-              type="text"id="boton-busqueda"name=""aria-label="busqueda-comic"/>SEARCH</label>
+  </nav>
+  <!--SECCION BUSQUEDA -->
+  <section class="section-busqueda">
+    <form class="form-personaje">
+      <div class="buscador">
+        <div class="menu-mobile">
+          <button class="buscar-personaje">
+            <i id="bars" class="fas fa-bars"></i>
+          </button>
         </div>
-      </form>
-    </section>
-    <!-- SECCION RESULTADOS -->
-    <section class="section-resultados-personajes">
-      <div class="contenedor-resultados-personajes">
-        <div class="section-personajes"></div>
+        <label for="input-busqueda">
+          <input type="text" id="input-busqueda-personaje" name="" aria-label="busqueda-comic"
+            placeholder="character" />SEARCH</label>
       </div>
-    </section>
-    <section class="section-detalle-personaje">
-      <div class="contenedor-detalle-personaje">
-        <div class="section-personaje"></div>
+    </form>
+  </section>
+  <!-- SECCION RESULTADOS -->
+  <section class="section-resultados-personajes">
+    <div class="contenedor-resultados-personajes">
+      <div class="section-personajes">
       </div>
-    </section>
-    <section class="section-resultados-episodios">
-      <div class="contenedor-resultados-episodios">
-        <div class="section-episodios"></div>
-      </div>
-    </section>
-    <section class="section-resultados-ubicaciones">
-      <div class="contenedor-resultados-ubicaciones">
-        <div class="section-ubicaciones"></div>
-      </div>
-    </section>
-    <!-- PAGINADO -->
-    <div class="paginado-personajes">
-      <button class="prev-personajes"id="prev">Previous Page</button>
-      <button class="next-personajes"id="next">Next Page</button>
+  </section>
+  <!-- PAGINADO -->
+  <div class="paginado-personajes">
+    <button class="prev-personajes" id="prev">Previous Page</button>
+    <button class="next-personajes" id="next">Next Page</button>
+  </div>
+  <!-- FOOTER-->
+  <footer>
+    <div class="footer">
+      <h2>Rick & Morty TP Api Rest</h2>
+      <h3 class="pie-de-pagina">Hecho por Mecha 💚</h3>
     </div>
-    <!-- FOOTER-->
-    <footer>
-      <div class="footer">
-        <h2>Rick & Morty TP Api Rest</h2>
-        <h3 class="pie-de-pagina">Hecho por Mecha 💚</h3>
-      </div>
-    </footer>
+  </footer>
 
-    <script src="index.js"></script>
-  </body>
+  <script src="index.js"></script>
+</body>
+
 </html>
