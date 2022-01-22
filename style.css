@@ -71,7 +71,7 @@ a {
   margin-bottom: 70px;
 }
 
-#boton-busqueda {
+#input-busqueda-personaje {
   border-radius: 15px;
   border: 3px double #04490d;
   padding: 20px;
@@ -89,7 +89,7 @@ label {
   margin-top: 100px;
 }
 
-.section-resultados-personajes {
+.section-resultados-personajes, .section-resultados-episodios, .section-resultados-ubicaciones {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -111,7 +111,7 @@ label {
   height: 200px;
 }
 
-.paginado-personajes {
+.paginado-personajes, .paginado-episodios, .paginado-ubicaciones {
   margin: 50px;
   display: flex;
   flex-direction: row;
@@ -119,7 +119,11 @@ label {
 }
 
 #prev,
-#next {
+#next,
+#prevepisodios,
+#nextepisodios,
+#prevubicaciones,
+#nextubicaciones {
   text-decoration: none;
   padding: 20px;
   font-family: "Neucha", cursive;
@@ -161,12 +165,24 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 1149px) and (min-width: 320px) {
-  .imgnav {
-    width: 500px;
-    height: 450px;
-  }
+.contenedor-resultados-episodios, .contenedor-resultados-ubicaciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
 
+.card-episodios, .card-ubicaciones {
+  margin: 20px;
+  border: 3px double #04490d;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(156, 154, 152, 0.692);
+}
+
+@media screen and (max-width: 1149px) {
   #personajes,
 #episodios,
 #ubicaciones {
@@ -174,7 +190,7 @@ h2 {
     width: 90px;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) {
   label {
     font-size: 30px;
   }
@@ -202,7 +218,7 @@ ul {
     font-size: 60px;
   }
 
-  .fasfa {
+  .buscar-personaje {
     padding: 0;
     margin: 0;
     border: none;
@@ -220,7 +236,7 @@ ul {
     flex-direction: row;
   }
 
-  #boton-busqueda {
+  #input-busqueda-personaje {
     font-size: 15px;
     width: 180px;
     height: 10px;
@@ -233,18 +249,8 @@ ul {
     flex-direction: row;
     justify-content: center;
   }
-
-  .imgnav {
-    display: flex;
-    justify-content: center;
-  }
 }
-@media screen and (max-width: 875px) and (min-width: 320px) {
-  .imgnav {
-    width: 500px;
-    height: 450px;
-  }
-
+@media screen and (max-width: 875px) {
   label {
     font-size: 30px;
   }
@@ -271,7 +277,7 @@ ul {
     font-size: 60px;
   }
 
-  .fasfa {
+  .buscar-personaje {
     padding: 0;
     margin: 0;
     border: none;
@@ -290,7 +296,7 @@ ul {
     flex-direction: row;
   }
 
-  #boton-busqueda {
+  #input-busqueda-personaje {
     font-size: 15px;
     width: 180px;
     height: 10px;
@@ -303,26 +309,21 @@ ul {
     flex-direction: row;
     justify-content: center;
   }
-
-  .imgnav {
-    display: flex;
-    justify-content: center;
-  }
 }
-@media screen and (max-width: 616px) and (min-width: 320px) {
+@media screen and (max-width: 616px) {
   .imgnav {
     width: 350px;
     height: 280px;
   }
 }
-@media screen and (max-width: 425px) and (min-width: 320px) {
+@media screen and (max-width: 425px) {
   .imgnav {
-    width: 320px;
-    height: 260px;
+    width: 300px;
+    height: 240px;
   }
 
   .buscador {
-    width: 300px;
+    width: 280px;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -337,7 +338,7 @@ ul {
     font-size: 25px;
   }
 
-  #boton-busqueda {
+  #input-busqueda-personaje {
     width: 90px;
     padding: 10px;
     margin-top: 30px;
