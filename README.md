@@ -8,7 +8,7 @@ Procesador sass, fetch a la API de Rick y Morty, paginado, branches, pull reques
 
 ## Link al proyecto
 
-[TP Rick y Morty ](https://mecha-default.github.io/)
+[TP Rick y Morty ](https://mecha-default.github.io/TP-API-RICK-MORTY/)
 
 
 ## Autores
