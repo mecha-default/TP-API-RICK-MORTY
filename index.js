@@ -10,6 +10,7 @@ const sectionResultadosUbicaciones= document.querySelector (".section-resultados
 const sectionDetallePersonaje= document.querySelector(".section-detalle-personaje")
 
 //MENU MOBILE 
+// estas variables se definen pero nunca se usan
 const linksNav= document.querySelector(".links-nav")
 const menuMobile= document.querySelector(".menu-mobile")
 const buscarPersonaje= document.querySelector(".buscar-personaje")
@@ -37,6 +38,9 @@ const mostrarPersonajes = ()=>{
         mostrarPersonajesEnHTML(data.results)
     })
 }
+
+// todas las funciones que, como esta, se ejecutan apenas carga la pagina deberian estar al final de todo
+// asi el flujo de ejecucion es mas facil de seguir
 mostrarPersonajes()
 
 const mostrarPersonajesEnHTML = (array) => {
@@ -49,6 +53,17 @@ const mostrarPersonajesEnHTML = (array) => {
     },"")
 
 // IMPLEMENTACION PAGINADO //
+// esta muy desprolijo este codigo. prestale mas atencion a los espacios, los saltos de linea, 
+// el tabulado. 
+// deberia estar asi:
+//     if (paginaActual === 1) {
+//         botonPrevPersonajes.disabled = true}
+//     else {
+//         botonPrevPersonajes.disabled = false
+//     }
+//     sectionResultadosPersonajes.innerHTML = html  
+// }  
+
    if(paginaActual === 1){
         botonPrevPersonajes.disabled = true}
         else{

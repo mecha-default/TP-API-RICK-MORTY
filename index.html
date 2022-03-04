@@ -7,13 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Buscador de Comics</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- el type deberia ser "image/ico" y el archivo llamarse "favicon.ico", asi:
+  <link rel="icon" type="image/ico" href="favicon.ico"> -->
   <link rel="icon" type="icon" href="icons8-rick-sanchez-50.ico" />
   <script src="https://kit.fontawesome.com/5f7fafbd10.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- NAVBAR -->
+  <!-- no uses mayusculas en nombres de clases -->
   <nav class="Navegador">
+    <!-- es inaceptable un alt en una imagen que sea "img". Estas hablandole a personas que no pueden ver y dependen 
+    de un lector de pantalla: que le pidan al lector la descripcion de la imagen y este les responsa "img"
+    es una burla.  -->
     <img class="imgnav"
       src="img/rick-morty-birthday-party-theme-pickle-design-template-0dd8541083b7f2414728328178d1ccc9_screen.jpeg"
       alt="img" />
@@ -37,10 +43,13 @@
       <div class="buscador">
         <div class="menu-mobile">
           <button class="buscar-personaje">
+            <!-- cuando un botón no tiene texto, debe tener aria-label -->
             <i id="bars" class="fas fa-bars"></i>
           </button>
         </div>
+        <!-- el for debe ser igual al id del elemento, en este caso, input-busqueda-personaje -->
         <label for="input-busqueda">
+          <!-- siempre pone name en tus inputs  -->
           <input type="text" id="input-busqueda-personaje" name="" aria-label="busqueda-comic"
             placeholder="character" />SEARCH</label>
       </div>
@@ -48,6 +57,7 @@
   </section>
   <!-- SECCION RESULTADOS -->
   <section class="section-resultados-personajes">
+    <!-- este div nunca se cierra  -->
     <div class="contenedor-resultados-personajes">
       <div class="section-personajes">
       </div>
